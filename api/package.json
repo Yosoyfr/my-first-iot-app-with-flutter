@@ -1,0 +1,33 @@
+{
+	"name": "api",
+	"version": "1.0.0",
+	"description": "API REST utilizando NodeJS y Express",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js"
+	},
+	"keywords": [],
+	"author": "Francisco Suarez @Yosoyfr",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Yosoyfr/my-first-iot-app-with-flutter/issues"
+	},
+	"homepage": "https://github.com/Yosoyfr/my-first-iot-app-with-flutter#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"express-async-errors": "^3.1.1",
+		"express-mongo-sanitize": "^2.2.0",
+		"express-rate-limit": "^6.3.0",
+		"helmet": "^5.0.2",
+		"http-status-codes": "^2.2.0",
+		"mongoose": "^6.2.9",
+		"morgan": "^1.10.0",
+		"xss-clean": "^0.1.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}

@@ -1,0 +1,11 @@
+POST http://localhost:3000/magnitudes HTTP/1.1
+content-type: application/json
+
+{
+    "temperature": 12,
+    "device": "IoT-001"
+}
+
+###
+
+GET http://localhost:3000/magnitudes?device=iot-001 HTTP/1.1
