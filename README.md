@@ -11,7 +11,7 @@ API REST desarrollada en NodeJS con Express como punto de comunicacion entre dis
 
 - ### Registro de magnitudes: */magnitudes*
   
-![Registo de magnitudes](./docs/images/api/endpoint1.png "Registro de magnitudes")
+![Registo de magnitudes](docs/images/api/endpoint1.png "Registro de magnitudes")
 
 - ### Obtener magnitudes: */magnitudes?device=###*
   
