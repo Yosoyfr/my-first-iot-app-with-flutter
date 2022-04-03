@@ -1,8 +1,8 @@
-POST http://localhost:3000/automation HTTP/1.1
+POST http://104.198.225.231:3000/automation HTTP/1.1
 content-type: application/json
 
 {
-    "illumination": true,
+    "illumination": false,
     "device": "IoT-001"
 }
 
