@@ -63,7 +63,7 @@ void loop()
 
         // you got two newline characters in a row
         // that's the end of the HTTP request, so send a response
-        if (buf.endsWith("GET /")) {
+        if (buf.endsWith("\r\n\r\n")) {
           sendHttpResponse(client);
           break;
         }
@@ -74,7 +74,7 @@ void loop()
           ledStatus = HIGH;
           digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
         }
-        else if (buf.endsWith("GET /L")) {
+        if (buf.endsWith("GET /L")) {
           Serial.println("Turn led OFF");
           ledStatus = LOW;
           digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
@@ -95,7 +95,7 @@ void sendHttpResponse(WiFiEspClient client)
   // and a content-type so the client knows what's coming, then a blank line:
   client.println("HTTP/1.1 200 OK");
   client.println("Content-type:application/json");
-  client.println("Refresh: 20");
+  client.println("Refresh: 2000000");
   client.println();
 
   float decimal = random(0, 99);
